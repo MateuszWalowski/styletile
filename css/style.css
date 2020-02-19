@@ -1,0 +1,259 @@
+/* change these */
+
+@import url("https://use.typekit.net/qpw5gft.css");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: black;
+  --link-color:  #990000;
+  --link-hover-color:  #660000;
+  --color-4: darkgrey;
+  --color-5: gray;
+
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Droid Serif", serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+
+button {
+  transition: all 3s;
+}
+a {
+  transition: all 3s;
+}
+button:hover {
+  background-color: var(--link-hover-color);
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: var(--bg-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+main,
+footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: calc(2 * var(--white-space));
+}
+
+.full-width {
+  background: var(--bg-color);
+  color: white;
+  width: 100%;
+}
+
+.header-wrapper h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  padding-right: 0.75em;
+  font-weight: bold;
+  color: white;
+}
+
+.header-wrapper h2 {
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+  margin: var(--white-space) 0;
+}
+
+.header-wrapper h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.header-wrapper h4 {
+  font-size: 0.8rem;
+}
+
+main {
+  padding: calc(2 * var(--white-space));
+}
+
+section {
+  margin-bottom: calc(4 * var(--white-space));
+}
+
+.section-heading {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swatches li {
+  margin-right: 5vw;
+  height: 15vw;
+  width: 20%;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.color-swatch-1 {
+  background-color: var(--bg-color);
+}
+
+.color-swatch-2 {
+  background-color: var(--link-color);
+}
+
+.color-swatch-3 {
+  background-color: var(--link-hover-color);
+}
+
+.color-swatch-4 {
+  background-color: var(--color-4);
+}
+
+.color-swatch-5 {
+  background-color: var(--color-5);
+}
+
+.textures li {
+  height: 30vw;
+  width: 40%;
+  margin-right: 5vw;
+}
+
+
+
+.images ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+.images li {
+  display: block;
+  /*margin-right: 5vw;*/
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 4px;
+  background: var(--link-color);
+  text-align: center;
+  text-decoration: none;
+  font: bold 1.25em/1 var(--primary-font);
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 0px -1px 0px #0374a0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+
+.secondary-button {
+  background: var(--color-5);
+}
+
+button:focus,
+button:active,
+button:focus-within {
+  outline: 0;
+  border-radius: 4px;
+}
+
+.typography-main {
+  color: var(--main-text-color);
+}
+
+.h1-sample, h1 {
+  font-family: schwager-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+
+}
+
+.h2-sample, h2 {
+  font-family: schwager-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+p.typography-sample, p {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  font-family: var(--primary-font);
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+
+.adjectives ul {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.adjectives ul {
+  flex-direction: column;
+}
+
+footer {
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    width: 20%;
+  }
+
+  .textures li {
+    height: 15vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .adjectives ul {
+    flex-direction: row;
+  }
+}
